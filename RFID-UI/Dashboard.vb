@@ -4,7 +4,7 @@ Imports MySql.Data.MySqlClient
 Public Class Dashboard
 
     'server=localhost; user=yout_database_user; password=your_database_password; database=your_database_name
-    Dim Connection As New MySqlConnection("server=localhost; user=root; password='Thewayofthemakersis_1337'; database=rfid_user_data")
+    Dim Connection As New MySqlConnection("server=----------------; user=----------------; password=----------------; database=----------------;")
     Dim MySQLCMD As New MySqlCommand
     Dim MySQLDA As New MySqlDataAdapter
     Dim DT As New DataTable
