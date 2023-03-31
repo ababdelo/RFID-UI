@@ -48,6 +48,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.32.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 8.0.32\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -166,9 +170,6 @@
     <None Include="Resources\icons8-sort-right-50.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-image-75.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\icons8-browse-page-100.png" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +186,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SpecificCharmingLeafcutterant-size_restricted.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-profile-picture-template-review-on-internet-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-image-75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remove-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remove-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-select-all-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-select-all-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-select-all-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-select-all-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-broom-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rotate-right-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dust-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-broom-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-unchecked-checkbox-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-unchecked-checkbox-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-unchecked-checkbox-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-select-all-64 %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

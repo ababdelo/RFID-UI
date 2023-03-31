@@ -22,7 +22,13 @@ Partial Class Dashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.PanelMenu = New System.Windows.Forms.Panel()
+        Me.PictureBoxSelect = New System.Windows.Forms.PictureBox()
+        Me.ButtonRegistration = New System.Windows.Forms.Button()
+        Me.ButtonUserData = New System.Windows.Forms.Button()
+        Me.ButtonConnection = New System.Windows.Forms.Button()
+        Me.PictureBoxLogo = New System.Windows.Forms.PictureBox()
         Me.LabelConnectionStatus = New System.Windows.Forms.Label()
         Me.LabelDateTime = New System.Windows.Forms.Label()
         Me.PanelConnection = New System.Windows.Forms.Panel()
@@ -41,7 +47,7 @@ Partial Class Dashboard
         Me.LabelContact = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.LabelAdrress = New System.Windows.Forms.Label()
+        Me.LabelAddress = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.LabelName = New System.Windows.Forms.Label()
@@ -49,11 +55,30 @@ Partial Class Dashboard
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBoxImage = New System.Windows.Forms.GroupBox()
         Me.LabelID = New System.Windows.Forms.Label()
+        Me.PictureBoxUserImage = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.PictureBoxImagePreview = New System.Windows.Forms.PictureBox()
+        Me.DataGridView = New System.Windows.Forms.DataGridView()
+        Me.ContextMenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SelectAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClearSelectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RefreshToolStripMenuItem = New System.Windows.Forms.ToolStripSeparator()
+        Me.RefreshToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.CheckBoxByID = New System.Windows.Forms.CheckBox()
+        Me.CheckBoxByName = New System.Windows.Forms.CheckBox()
+        Me.TextBoxSearch = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.PictureBoxImageInput = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.LabelGetID = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.ButtonScanID = New System.Windows.Forms.Button()
-        Me.ButtonErase = New System.Windows.Forms.Button()
+        Me.ButtonClearForm = New System.Windows.Forms.Button()
         Me.ButtonSave = New System.Windows.Forms.Button()
         Me.TextBoxRole = New System.Windows.Forms.TextBox()
         Me.TextBoxContact = New System.Windows.Forms.TextBox()
@@ -64,48 +89,35 @@ Partial Class Dashboard
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PanelRegistrationandEditUserData = New System.Windows.Forms.Panel()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.LabelGetID = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBoxSearch = New System.Windows.Forms.TextBox()
-        Me.CheckBoxByID = New System.Windows.Forms.CheckBox()
-        Me.CheckBoxByName = New System.Windows.Forms.CheckBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.PanelReadingTagProcess = New System.Windows.Forms.Panel()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.TimerTimeDate = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBoxStatusConnect = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxSelect = New System.Windows.Forms.PictureBox()
-        Me.ButtonRegistration = New System.Windows.Forms.Button()
-        Me.ButtonUserData = New System.Windows.Forms.Button()
-        Me.ButtonConnection = New System.Windows.Forms.Button()
-        Me.PictureBoxLogo = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.SerialPort = New System.IO.Ports.SerialPort(Me.components)
+        Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.ButtonCloseReadingTag = New System.Windows.Forms.Button()
-        Me.PictureBoxImageViewer = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxImageInput = New System.Windows.Forms.PictureBox()
-        Me.PictureBoxUserImage = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PanelReadingTagProcess = New System.Windows.Forms.Panel()
+        Me.TimerSerialIn = New System.Windows.Forms.Timer(Me.components)
         Me.PanelMenu.SuspendLayout()
+        CType(Me.PictureBoxSelect, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelConnection.SuspendLayout()
         Me.PanelUserData.SuspendLayout()
         Me.GroupBox.SuspendLayout()
         Me.GroupBoxImage.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelReadingTagProcess.SuspendLayout()
-        CType(Me.PictureBoxStatusConnect, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxSelect, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxLogo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxImageViewer, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBoxImageInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBoxUserImage, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        CType(Me.PictureBoxImagePreview, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBoxImageInput, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBoxStatusConnect, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelReadingTagProcess.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelMenu
@@ -122,6 +134,75 @@ Partial Class Dashboard
         Me.PanelMenu.Name = "PanelMenu"
         Me.PanelMenu.Size = New System.Drawing.Size(324, 579)
         Me.PanelMenu.TabIndex = 0
+        '
+        'PictureBoxSelect
+        '
+        Me.PictureBoxSelect.Image = Global.RFID_UI.My.Resources.Resources.icons8_sort_right_50
+        Me.PictureBoxSelect.Location = New System.Drawing.Point(0, 193)
+        Me.PictureBoxSelect.Name = "PictureBoxSelect"
+        Me.PictureBoxSelect.Size = New System.Drawing.Size(25, 36)
+        Me.PictureBoxSelect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBoxSelect.TabIndex = 4
+        Me.PictureBoxSelect.TabStop = False
+        '
+        'ButtonRegistration
+        '
+        Me.ButtonRegistration.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ButtonRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonRegistration.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonRegistration.ForeColor = System.Drawing.Color.White
+        Me.ButtonRegistration.Image = Global.RFID_UI.My.Resources.Resources.icons8_add_32
+        Me.ButtonRegistration.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonRegistration.Location = New System.Drawing.Point(22, 277)
+        Me.ButtonRegistration.Name = "ButtonRegistration"
+        Me.ButtonRegistration.Size = New System.Drawing.Size(300, 36)
+        Me.ButtonRegistration.TabIndex = 3
+        Me.ButtonRegistration.Text = "                   Registration / Edit User Data"
+        Me.ButtonRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonRegistration.UseVisualStyleBackColor = True
+        '
+        'ButtonUserData
+        '
+        Me.ButtonUserData.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ButtonUserData.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonUserData.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonUserData.ForeColor = System.Drawing.Color.White
+        Me.ButtonUserData.Image = Global.RFID_UI.My.Resources.Resources.icons8_curriculum_vitae_32
+        Me.ButtonUserData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonUserData.Location = New System.Drawing.Point(22, 235)
+        Me.ButtonUserData.Name = "ButtonUserData"
+        Me.ButtonUserData.Size = New System.Drawing.Size(300, 36)
+        Me.ButtonUserData.TabIndex = 2
+        Me.ButtonUserData.Text = "                    User Data"
+        Me.ButtonUserData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonUserData.UseVisualStyleBackColor = True
+        '
+        'ButtonConnection
+        '
+        Me.ButtonConnection.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ButtonConnection.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonConnection.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonConnection.ForeColor = System.Drawing.Color.White
+        Me.ButtonConnection.Image = Global.RFID_UI.My.Resources.Resources.icons8_usb_connector_32
+        Me.ButtonConnection.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonConnection.Location = New System.Drawing.Point(22, 193)
+        Me.ButtonConnection.Name = "ButtonConnection"
+        Me.ButtonConnection.Size = New System.Drawing.Size(300, 36)
+        Me.ButtonConnection.TabIndex = 1
+        Me.ButtonConnection.Text = "                   Connection"
+        Me.ButtonConnection.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonConnection.UseVisualStyleBackColor = True
+        '
+        'PictureBoxLogo
+        '
+        Me.PictureBoxLogo.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.PictureBoxLogo.Image = Global.RFID_UI.My.Resources.Resources.icons8_user_profile_picture_template_review_on_internet_100
+        Me.PictureBoxLogo.Location = New System.Drawing.Point(62, 25)
+        Me.PictureBoxLogo.Name = "PictureBoxLogo"
+        Me.PictureBoxLogo.Size = New System.Drawing.Size(200, 142)
+        Me.PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBoxLogo.TabIndex = 0
+        Me.PictureBoxLogo.TabStop = False
         '
         'LabelConnectionStatus
         '
@@ -269,7 +350,7 @@ Partial Class Dashboard
         Me.GroupBox.Controls.Add(Me.LabelContact)
         Me.GroupBox.Controls.Add(Me.Label9)
         Me.GroupBox.Controls.Add(Me.Label10)
-        Me.GroupBox.Controls.Add(Me.LabelAdrress)
+        Me.GroupBox.Controls.Add(Me.LabelAddress)
         Me.GroupBox.Controls.Add(Me.Label6)
         Me.GroupBox.Controls.Add(Me.Label7)
         Me.GroupBox.Controls.Add(Me.LabelName)
@@ -367,16 +448,16 @@ Partial Class Dashboard
         Me.Label10.TabIndex = 8
         Me.Label10.Text = "Contact"
         '
-        'LabelAdrress
+        'LabelAddress
         '
-        Me.LabelAdrress.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.LabelAdrress.AutoSize = True
-        Me.LabelAdrress.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAdrress.Location = New System.Drawing.Point(151, 85)
-        Me.LabelAdrress.Name = "LabelAdrress"
-        Me.LabelAdrress.Size = New System.Drawing.Size(81, 19)
-        Me.LabelAdrress.TabIndex = 7
-        Me.LabelAdrress.Text = "Waiting ..."
+        Me.LabelAddress.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.LabelAddress.AutoSize = True
+        Me.LabelAddress.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelAddress.Location = New System.Drawing.Point(151, 85)
+        Me.LabelAddress.Name = "LabelAddress"
+        Me.LabelAddress.Size = New System.Drawing.Size(81, 19)
+        Me.LabelAddress.TabIndex = 7
+        Me.LabelAddress.Text = "Waiting ..."
         '
         'Label6
         '
@@ -456,6 +537,16 @@ Partial Class Dashboard
         Me.LabelID.TabIndex = 1
         Me.LabelID.Text = "ID :  ___________"
         '
+        'PictureBoxUserImage
+        '
+        Me.PictureBoxUserImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBoxUserImage.Location = New System.Drawing.Point(18, 24)
+        Me.PictureBoxUserImage.Name = "PictureBoxUserImage"
+        Me.PictureBoxUserImage.Size = New System.Drawing.Size(174, 174)
+        Me.PictureBoxUserImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBoxUserImage.TabIndex = 0
+        Me.PictureBoxUserImage.TabStop = False
+        '
         'Panel2
         '
         Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -475,7 +566,7 @@ Partial Class Dashboard
         Me.Panel1.Controls.Add(Me.GroupBox3)
         Me.Panel1.Controls.Add(Me.GroupBox2)
         Me.Panel1.Controls.Add(Me.GroupBox1)
-        Me.Panel1.Controls.Add(Me.ButtonErase)
+        Me.Panel1.Controls.Add(Me.ButtonClearForm)
         Me.Panel1.Controls.Add(Me.ButtonSave)
         Me.Panel1.Controls.Add(Me.TextBoxRole)
         Me.Panel1.Controls.Add(Me.TextBoxContact)
@@ -491,6 +582,169 @@ Partial Class Dashboard
         Me.Panel1.Size = New System.Drawing.Size(588, 546)
         Me.Panel1.TabIndex = 6
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox3.Controls.Add(Me.PictureBoxImagePreview)
+        Me.GroupBox3.Controls.Add(Me.DataGridView)
+        Me.GroupBox3.Controls.Add(Me.PictureBox1)
+        Me.GroupBox3.Controls.Add(Me.CheckBoxByID)
+        Me.GroupBox3.Controls.Add(Me.CheckBoxByName)
+        Me.GroupBox3.Controls.Add(Me.TextBoxSearch)
+        Me.GroupBox3.Controls.Add(Me.Label15)
+        Me.GroupBox3.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Location = New System.Drawing.Point(14, 271)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(555, 263)
+        Me.GroupBox3.TabIndex = 15
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Record View"
+        '
+        'PictureBoxImagePreview
+        '
+        Me.PictureBoxImagePreview.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBoxImagePreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBoxImagePreview.Location = New System.Drawing.Point(436, 55)
+        Me.PictureBoxImagePreview.Name = "PictureBoxImagePreview"
+        Me.PictureBoxImagePreview.Size = New System.Drawing.Size(110, 110)
+        Me.PictureBoxImagePreview.TabIndex = 25
+        Me.PictureBoxImagePreview.TabStop = False
+        '
+        'DataGridView
+        '
+        Me.DataGridView.AllowUserToAddRows = False
+        Me.DataGridView.AllowUserToDeleteRows = False
+        Me.DataGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView.ContextMenuStrip = Me.ContextMenuStrip
+        Me.DataGridView.Location = New System.Drawing.Point(9, 55)
+        Me.DataGridView.Name = "DataGridView"
+        Me.DataGridView.ReadOnly = True
+        Me.DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataGridView.Size = New System.Drawing.Size(420, 195)
+        Me.DataGridView.TabIndex = 24
+        '
+        'ContextMenuStrip
+        '
+        Me.ContextMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DeleteToolStripMenuItem, Me.SelectAllToolStripMenuItem, Me.ClearSelectionToolStripMenuItem, Me.RefreshToolStripMenuItem, Me.RefreshToolStripMenuItem1})
+        Me.ContextMenuStrip.Name = "ContextMenuStrip"
+        Me.ContextMenuStrip.Size = New System.Drawing.Size(153, 98)
+        '
+        'DeleteToolStripMenuItem
+        '
+        Me.DeleteToolStripMenuItem.Image = Global.RFID_UI.My.Resources.Resources.icons8_remove_24
+        Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DeleteToolStripMenuItem.Text = "Delete"
+        '
+        'SelectAllToolStripMenuItem
+        '
+        Me.SelectAllToolStripMenuItem.Image = Global.RFID_UI.My.Resources.Resources.icons8_select_all_64__1_
+        Me.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
+        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SelectAllToolStripMenuItem.Text = "Select All"
+        '
+        'ClearSelectionToolStripMenuItem
+        '
+        Me.ClearSelectionToolStripMenuItem.Image = Global.RFID_UI.My.Resources.Resources.icons8_broom_48
+        Me.ClearSelectionToolStripMenuItem.Name = "ClearSelectionToolStripMenuItem"
+        Me.ClearSelectionToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ClearSelectionToolStripMenuItem.Text = "Clear Selection"
+        '
+        'RefreshToolStripMenuItem
+        '
+        Me.RefreshToolStripMenuItem.Name = "RefreshToolStripMenuItem"
+        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(149, 6)
+        '
+        'RefreshToolStripMenuItem1
+        '
+        Me.RefreshToolStripMenuItem1.Image = Global.RFID_UI.My.Resources.Resources.icons8_rotate_right_48
+        Me.RefreshToolStripMenuItem1.Name = "RefreshToolStripMenuItem1"
+        Me.RefreshToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.RefreshToolStripMenuItem1.Text = "Refresh"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Image = Global.RFID_UI.My.Resources.Resources.icons8_search_24
+        Me.PictureBox1.Location = New System.Drawing.Point(301, 19)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(24, 24)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 18
+        Me.PictureBox1.TabStop = False
+        '
+        'CheckBoxByID
+        '
+        Me.CheckBoxByID.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CheckBoxByID.AutoSize = True
+        Me.CheckBoxByID.Location = New System.Drawing.Point(450, 23)
+        Me.CheckBoxByID.Name = "CheckBoxByID"
+        Me.CheckBoxByID.Size = New System.Drawing.Size(95, 19)
+        Me.CheckBoxByID.TabIndex = 23
+        Me.CheckBoxByID.Text = "Search by ID"
+        Me.CheckBoxByID.UseVisualStyleBackColor = True
+        '
+        'CheckBoxByName
+        '
+        Me.CheckBoxByName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CheckBoxByName.AutoSize = True
+        Me.CheckBoxByName.Checked = True
+        Me.CheckBoxByName.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBoxByName.Location = New System.Drawing.Point(331, 23)
+        Me.CheckBoxByName.Name = "CheckBoxByName"
+        Me.CheckBoxByName.Size = New System.Drawing.Size(117, 19)
+        Me.CheckBoxByName.TabIndex = 22
+        Me.CheckBoxByName.Text = "Search by Name"
+        Me.CheckBoxByName.UseVisualStyleBackColor = True
+        '
+        'TextBoxSearch
+        '
+        Me.TextBoxSearch.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBoxSearch.Location = New System.Drawing.Point(66, 20)
+        Me.TextBoxSearch.Name = "TextBoxSearch"
+        Me.TextBoxSearch.Size = New System.Drawing.Size(250, 21)
+        Me.TextBoxSearch.TabIndex = 19
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(6, 24)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(54, 15)
+        Me.Label15.TabIndex = 17
+        Me.Label15.Text = "Search :"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox2.Controls.Add(Me.PictureBoxImageInput)
+        Me.GroupBox2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(449, 132)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(120, 130)
+        Me.GroupBox2.TabIndex = 14
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Picture"
+        '
+        'PictureBoxImageInput
+        '
+        Me.PictureBoxImageInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBoxImageInput.Image = Global.RFID_UI.My.Resources.Resources.Click_to_browse
+        Me.PictureBoxImageInput.Location = New System.Drawing.Point(10, 22)
+        Me.PictureBoxImageInput.Name = "PictureBoxImageInput"
+        Me.PictureBoxImageInput.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBoxImageInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBoxImageInput.TabIndex = 15
+        Me.PictureBoxImageInput.TabStop = False
+        '
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -504,6 +758,28 @@ Partial Class Dashboard
         Me.GroupBox1.TabIndex = 13
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Get ID"
+        '
+        'LabelGetID
+        '
+        Me.LabelGetID.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.LabelGetID.AutoSize = True
+        Me.LabelGetID.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelGetID.Location = New System.Drawing.Point(35, 98)
+        Me.LabelGetID.Name = "LabelGetID"
+        Me.LabelGetID.Size = New System.Drawing.Size(63, 15)
+        Me.LabelGetID.TabIndex = 16
+        Me.LabelGetID.Text = "________"
+        '
+        'Label14
+        '
+        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(6, 98)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(18, 15)
+        Me.Label14.TabIndex = 15
+        Me.Label14.Text = "ID"
         '
         'ButtonScanID
         '
@@ -522,22 +798,22 @@ Partial Class Dashboard
         Me.ButtonScanID.Text = "Scan ID"
         Me.ButtonScanID.UseVisualStyleBackColor = False
         '
-        'ButtonErase
+        'ButtonClearForm
         '
-        Me.ButtonErase.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ButtonErase.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(180, Byte), Integer))
-        Me.ButtonErase.FlatAppearance.BorderSize = 2
-        Me.ButtonErase.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.ButtonErase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ButtonErase.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonErase.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonErase.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(180, Byte), Integer))
-        Me.ButtonErase.Location = New System.Drawing.Point(161, 195)
-        Me.ButtonErase.Name = "ButtonErase"
-        Me.ButtonErase.Size = New System.Drawing.Size(82, 49)
-        Me.ButtonErase.TabIndex = 12
-        Me.ButtonErase.Text = "Erase"
-        Me.ButtonErase.UseVisualStyleBackColor = False
+        Me.ButtonClearForm.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ButtonClearForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(180, Byte), Integer))
+        Me.ButtonClearForm.FlatAppearance.BorderSize = 2
+        Me.ButtonClearForm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.ButtonClearForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ButtonClearForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonClearForm.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonClearForm.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(180, Byte), Integer))
+        Me.ButtonClearForm.Location = New System.Drawing.Point(161, 195)
+        Me.ButtonClearForm.Name = "ButtonClearForm"
+        Me.ButtonClearForm.Size = New System.Drawing.Size(82, 49)
+        Me.ButtonClearForm.TabIndex = 12
+        Me.ButtonClearForm.Text = "Clear"
+        Me.ButtonClearForm.UseVisualStyleBackColor = False
         '
         'ButtonSave
         '
@@ -560,7 +836,6 @@ Partial Class Dashboard
         '
         Me.TextBoxRole.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBoxRole.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBoxRole.Location = New System.Drawing.Point(77, 102)
         Me.TextBoxRole.Name = "TextBoxRole"
         Me.TextBoxRole.Size = New System.Drawing.Size(492, 20)
@@ -570,7 +845,6 @@ Partial Class Dashboard
         '
         Me.TextBoxContact.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBoxContact.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBoxContact.Location = New System.Drawing.Point(77, 74)
         Me.TextBoxContact.Name = "TextBoxContact"
         Me.TextBoxContact.Size = New System.Drawing.Size(492, 20)
@@ -580,7 +854,6 @@ Partial Class Dashboard
         '
         Me.TextBoxAddress.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBoxAddress.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBoxAddress.Location = New System.Drawing.Point(77, 46)
         Me.TextBoxAddress.Name = "TextBoxAddress"
         Me.TextBoxAddress.Size = New System.Drawing.Size(492, 20)
@@ -590,7 +863,6 @@ Partial Class Dashboard
         '
         Me.TextBoxName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBoxName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TextBoxName.Location = New System.Drawing.Point(77, 18)
         Me.TextBoxName.Name = "TextBoxName"
         Me.TextBoxName.Size = New System.Drawing.Size(492, 20)
@@ -654,124 +926,23 @@ Partial Class Dashboard
         Me.PanelRegistrationandEditUserData.Size = New System.Drawing.Size(1063, 5)
         Me.PanelRegistrationandEditUserData.TabIndex = 0
         '
-        'Label14
+        'TimerTimeDate
         '
-        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(6, 98)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(18, 15)
-        Me.Label14.TabIndex = 15
-        Me.Label14.Text = "ID"
+        Me.TimerTimeDate.Enabled = True
         '
-        'LabelGetID
+        'PictureBoxStatusConnect
         '
-        Me.LabelGetID.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.LabelGetID.AutoSize = True
-        Me.LabelGetID.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelGetID.Location = New System.Drawing.Point(35, 98)
-        Me.LabelGetID.Name = "LabelGetID"
-        Me.LabelGetID.Size = New System.Drawing.Size(63, 15)
-        Me.LabelGetID.TabIndex = 16
-        Me.LabelGetID.Text = "________"
+        Me.PictureBoxStatusConnect.Image = Global.RFID_UI.My.Resources.Resources.Disconnected
+        Me.PictureBoxStatusConnect.Location = New System.Drawing.Point(515, 4)
+        Me.PictureBoxStatusConnect.Name = "PictureBoxStatusConnect"
+        Me.PictureBoxStatusConnect.Size = New System.Drawing.Size(12, 12)
+        Me.PictureBoxStatusConnect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBoxStatusConnect.TabIndex = 2
+        Me.PictureBoxStatusConnect.TabStop = False
         '
-        'GroupBox2
+        'OpenFileDialog
         '
-        Me.GroupBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox2.Controls.Add(Me.PictureBoxImageInput)
-        Me.GroupBox2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(449, 132)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(120, 130)
-        Me.GroupBox2.TabIndex = 14
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Picture"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox3.Controls.Add(Me.PictureBoxImageViewer)
-        Me.GroupBox3.Controls.Add(Me.DataGridView1)
-        Me.GroupBox3.Controls.Add(Me.PictureBox1)
-        Me.GroupBox3.Controls.Add(Me.CheckBoxByID)
-        Me.GroupBox3.Controls.Add(Me.CheckBoxByName)
-        Me.GroupBox3.Controls.Add(Me.TextBoxSearch)
-        Me.GroupBox3.Controls.Add(Me.Label15)
-        Me.GroupBox3.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(14, 271)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(555, 263)
-        Me.GroupBox3.TabIndex = 15
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Record View"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(6, 24)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(54, 15)
-        Me.Label15.TabIndex = 17
-        Me.Label15.Text = "Search :"
-        '
-        'TextBoxSearch
-        '
-        Me.TextBoxSearch.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBoxSearch.Location = New System.Drawing.Point(66, 20)
-        Me.TextBoxSearch.Name = "TextBoxSearch"
-        Me.TextBoxSearch.Size = New System.Drawing.Size(250, 21)
-        Me.TextBoxSearch.TabIndex = 19
-        '
-        'CheckBoxByID
-        '
-        Me.CheckBoxByID.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CheckBoxByID.AutoSize = True
-        Me.CheckBoxByID.Location = New System.Drawing.Point(450, 23)
-        Me.CheckBoxByID.Name = "CheckBoxByID"
-        Me.CheckBoxByID.Size = New System.Drawing.Size(95, 19)
-        Me.CheckBoxByID.TabIndex = 23
-        Me.CheckBoxByID.Text = "Search by ID"
-        Me.CheckBoxByID.UseVisualStyleBackColor = True
-        '
-        'CheckBoxByName
-        '
-        Me.CheckBoxByName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CheckBoxByName.AutoSize = True
-        Me.CheckBoxByName.Checked = True
-        Me.CheckBoxByName.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBoxByName.Location = New System.Drawing.Point(331, 23)
-        Me.CheckBoxByName.Name = "CheckBoxByName"
-        Me.CheckBoxByName.Size = New System.Drawing.Size(117, 19)
-        Me.CheckBoxByName.TabIndex = 22
-        Me.CheckBoxByName.Text = "Search by Name"
-        Me.CheckBoxByName.UseVisualStyleBackColor = True
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(9, 55)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(420, 195)
-        Me.DataGridView1.TabIndex = 24
-        '
-        'PanelReadingTagProcess
-        '
-        Me.PanelReadingTagProcess.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelReadingTagProcess.Controls.Add(Me.PictureBox2)
-        Me.PanelReadingTagProcess.Controls.Add(Me.ButtonCloseReadingTag)
-        Me.PanelReadingTagProcess.Controls.Add(Me.Label16)
-        Me.PanelReadingTagProcess.Location = New System.Drawing.Point(14, 18)
-        Me.PanelReadingTagProcess.Name = "PanelReadingTagProcess"
-        Me.PanelReadingTagProcess.Size = New System.Drawing.Size(264, 165)
-        Me.PanelReadingTagProcess.TabIndex = 16
+        Me.OpenFileDialog.FileName = "OpenFileDialog1"
         '
         'Label16
         '
@@ -782,95 +953,6 @@ Partial Class Dashboard
         Me.Label16.Size = New System.Drawing.Size(88, 15)
         Me.Label16.TabIndex = 18
         Me.Label16.Text = "Reading Tag ..."
-        '
-        'PictureBoxStatusConnect
-        '
-        Me.PictureBoxStatusConnect.Image = Global.RFID_UI.My.Resources.Resources.icons8_filledred_circle_48
-        Me.PictureBoxStatusConnect.Location = New System.Drawing.Point(515, 4)
-        Me.PictureBoxStatusConnect.Name = "PictureBoxStatusConnect"
-        Me.PictureBoxStatusConnect.Size = New System.Drawing.Size(12, 12)
-        Me.PictureBoxStatusConnect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBoxStatusConnect.TabIndex = 2
-        Me.PictureBoxStatusConnect.TabStop = False
-        '
-        'PictureBoxSelect
-        '
-        Me.PictureBoxSelect.Image = Global.RFID_UI.My.Resources.Resources.icons8_sort_right_50
-        Me.PictureBoxSelect.Location = New System.Drawing.Point(0, 193)
-        Me.PictureBoxSelect.Name = "PictureBoxSelect"
-        Me.PictureBoxSelect.Size = New System.Drawing.Size(25, 36)
-        Me.PictureBoxSelect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBoxSelect.TabIndex = 4
-        Me.PictureBoxSelect.TabStop = False
-        '
-        'ButtonRegistration
-        '
-        Me.ButtonRegistration.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ButtonRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonRegistration.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonRegistration.ForeColor = System.Drawing.Color.White
-        Me.ButtonRegistration.Image = Global.RFID_UI.My.Resources.Resources.icons8_add_32
-        Me.ButtonRegistration.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonRegistration.Location = New System.Drawing.Point(22, 277)
-        Me.ButtonRegistration.Name = "ButtonRegistration"
-        Me.ButtonRegistration.Size = New System.Drawing.Size(300, 36)
-        Me.ButtonRegistration.TabIndex = 3
-        Me.ButtonRegistration.Text = "                   Registration / Edit User Data"
-        Me.ButtonRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonRegistration.UseVisualStyleBackColor = True
-        '
-        'ButtonUserData
-        '
-        Me.ButtonUserData.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ButtonUserData.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonUserData.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonUserData.ForeColor = System.Drawing.Color.White
-        Me.ButtonUserData.Image = Global.RFID_UI.My.Resources.Resources.icons8_curriculum_vitae_32
-        Me.ButtonUserData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonUserData.Location = New System.Drawing.Point(22, 235)
-        Me.ButtonUserData.Name = "ButtonUserData"
-        Me.ButtonUserData.Size = New System.Drawing.Size(300, 36)
-        Me.ButtonUserData.TabIndex = 2
-        Me.ButtonUserData.Text = "                    User Data"
-        Me.ButtonUserData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonUserData.UseVisualStyleBackColor = True
-        '
-        'ButtonConnection
-        '
-        Me.ButtonConnection.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ButtonConnection.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonConnection.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonConnection.ForeColor = System.Drawing.Color.White
-        Me.ButtonConnection.Image = Global.RFID_UI.My.Resources.Resources.icons8_usb_connector_32
-        Me.ButtonConnection.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonConnection.Location = New System.Drawing.Point(22, 193)
-        Me.ButtonConnection.Name = "ButtonConnection"
-        Me.ButtonConnection.Size = New System.Drawing.Size(300, 36)
-        Me.ButtonConnection.TabIndex = 1
-        Me.ButtonConnection.Text = "                   Connection"
-        Me.ButtonConnection.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonConnection.UseVisualStyleBackColor = True
-        '
-        'PictureBoxLogo
-        '
-        Me.PictureBoxLogo.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.PictureBoxLogo.Image = Global.RFID_UI.My.Resources.Resources.icons8_user_profile_picture_template_review_on_internet_100
-        Me.PictureBoxLogo.Location = New System.Drawing.Point(62, 25)
-        Me.PictureBoxLogo.Name = "PictureBoxLogo"
-        Me.PictureBoxLogo.Size = New System.Drawing.Size(200, 142)
-        Me.PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBoxLogo.TabIndex = 0
-        Me.PictureBoxLogo.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.RFID_UI.My.Resources.Resources.SpecificCharmingLeafcutterant_size_restricted
-        Me.PictureBox2.Location = New System.Drawing.Point(91, 72)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(80, 80)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 20
-        Me.PictureBox2.TabStop = False
         '
         'ButtonCloseReadingTag
         '
@@ -886,46 +968,30 @@ Partial Class Dashboard
         Me.ButtonCloseReadingTag.TabIndex = 19
         Me.ButtonCloseReadingTag.UseVisualStyleBackColor = True
         '
-        'PictureBoxImageViewer
+        'PictureBox2
         '
-        Me.PictureBoxImageViewer.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBoxImageViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBoxImageViewer.Location = New System.Drawing.Point(436, 55)
-        Me.PictureBoxImageViewer.Name = "PictureBoxImageViewer"
-        Me.PictureBoxImageViewer.Size = New System.Drawing.Size(110, 110)
-        Me.PictureBoxImageViewer.TabIndex = 25
-        Me.PictureBoxImageViewer.TabStop = False
+        Me.PictureBox2.Image = Global.RFID_UI.My.Resources.Resources.SpecificCharmingLeafcutterant_size_restricted
+        Me.PictureBox2.Location = New System.Drawing.Point(91, 72)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(80, 80)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 20
+        Me.PictureBox2.TabStop = False
         '
-        'PictureBox1
+        'PanelReadingTagProcess
         '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Image = Global.RFID_UI.My.Resources.Resources.icons8_search_24
-        Me.PictureBox1.Location = New System.Drawing.Point(301, 19)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(24, 24)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 18
-        Me.PictureBox1.TabStop = False
+        Me.PanelReadingTagProcess.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PanelReadingTagProcess.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelReadingTagProcess.Controls.Add(Me.PictureBox2)
+        Me.PanelReadingTagProcess.Controls.Add(Me.ButtonCloseReadingTag)
+        Me.PanelReadingTagProcess.Controls.Add(Me.Label16)
+        Me.PanelReadingTagProcess.Location = New System.Drawing.Point(138, 105)
+        Me.PanelReadingTagProcess.Name = "PanelReadingTagProcess"
+        Me.PanelReadingTagProcess.Size = New System.Drawing.Size(264, 165)
+        Me.PanelReadingTagProcess.TabIndex = 16
         '
-        'PictureBoxImageInput
+        'TimerSerialIn
         '
-        Me.PictureBoxImageInput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBoxImageInput.Image = Global.RFID_UI.My.Resources.Resources.icons8_image_75
-        Me.PictureBoxImageInput.Location = New System.Drawing.Point(10, 22)
-        Me.PictureBoxImageInput.Name = "PictureBoxImageInput"
-        Me.PictureBoxImageInput.Size = New System.Drawing.Size(100, 100)
-        Me.PictureBoxImageInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBoxImageInput.TabIndex = 15
-        Me.PictureBoxImageInput.TabStop = False
-        '
-        'PictureBoxUserImage
-        '
-        Me.PictureBoxUserImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBoxUserImage.Location = New System.Drawing.Point(18, 24)
-        Me.PictureBoxUserImage.Name = "PictureBoxUserImage"
-        Me.PictureBoxUserImage.Size = New System.Drawing.Size(174, 174)
-        Me.PictureBoxUserImage.TabIndex = 0
-        Me.PictureBoxUserImage.TabStop = False
         '
         'Dashboard
         '
@@ -944,6 +1010,8 @@ Partial Class Dashboard
         Me.Name = "Dashboard"
         Me.Text = " "
         Me.PanelMenu.ResumeLayout(False)
+        CType(Me.PictureBoxSelect, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelConnection.ResumeLayout(False)
         Me.PanelConnection.PerformLayout()
         Me.PanelUserData.ResumeLayout(False)
@@ -951,24 +1019,23 @@ Partial Class Dashboard
         Me.GroupBox.PerformLayout()
         Me.GroupBoxImage.ResumeLayout(False)
         Me.GroupBoxImage.PerformLayout()
+        CType(Me.PictureBoxUserImage, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxImagePreview, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        CType(Me.PictureBoxImageInput, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBoxStatusConnect, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelReadingTagProcess.ResumeLayout(False)
         Me.PanelReadingTagProcess.PerformLayout()
-        CType(Me.PictureBoxStatusConnect, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxSelect, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxLogo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxImageViewer, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxImageInput, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxUserImage, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1003,7 +1070,7 @@ Partial Class Dashboard
     Friend WithEvents LabelContact As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents LabelAdrress As Label
+    Friend WithEvents LabelAddress As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents LabelName As Label
@@ -1017,7 +1084,7 @@ Partial Class Dashboard
     Friend WithEvents PanelRegistrationandEditUserData As Panel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents ButtonScanID As Button
-    Friend WithEvents ButtonErase As Button
+    Friend WithEvents ButtonClearForm As Button
     Friend WithEvents ButtonSave As Button
     Friend WithEvents TextBoxRole As TextBox
     Friend WithEvents TextBoxContact As TextBox
@@ -1033,10 +1100,20 @@ Partial Class Dashboard
     Friend WithEvents CheckBoxByID As CheckBox
     Friend WithEvents CheckBoxByName As CheckBox
     Friend WithEvents TextBoxSearch As TextBox
-    Friend WithEvents PictureBoxImageViewer As PictureBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents PictureBoxImagePreview As PictureBox
+    Friend WithEvents DataGridView As DataGridView
+    Friend WithEvents TimerTimeDate As Timer
+    Friend WithEvents ContextMenuStrip As ContextMenuStrip
+    Friend WithEvents DeleteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SelectAllToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ClearSelectionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RefreshToolStripMenuItem As ToolStripSeparator
+    Friend WithEvents RefreshToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents SerialPort As IO.Ports.SerialPort
+    Friend WithEvents OpenFileDialog As OpenFileDialog
     Friend WithEvents PanelReadingTagProcess As Panel
+    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents ButtonCloseReadingTag As Button
     Friend WithEvents Label16 As Label
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents TimerSerialIn As Timer
 End Class

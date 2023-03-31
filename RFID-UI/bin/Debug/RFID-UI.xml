@@ -22,7 +22,27 @@ RFID-UI
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:RFID_UI.My.Resources.Resources.Click_to_browse">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:RFID_UI.My.Resources.Resources.Connected">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:RFID_UI.My.Resources.Resources.Disconnected">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:RFID_UI.My.Resources.Resources.icons8_add_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:RFID_UI.My.Resources.Resources.icons8_broom_48">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -37,22 +57,42 @@ RFID-UI
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:RFID_UI.My.Resources.Resources.icons8_filledred_circle_48">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:RFID_UI.My.Resources.Resources.icons8_image_75">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:RFID_UI.My.Resources.Resources.icons8_product_100__1_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:RFID_UI.My.Resources.Resources.icons8_remove_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:RFID_UI.My.Resources.Resources.icons8_rotate_right_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:RFID_UI.My.Resources.Resources.icons8_search_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:RFID_UI.My.Resources.Resources.icons8_select_all_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:RFID_UI.My.Resources.Resources.icons8_select_all_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:RFID_UI.My.Resources.Resources.icons8_select_all_64__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:RFID_UI.My.Resources.Resources.icons8_select_all_64__2_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
